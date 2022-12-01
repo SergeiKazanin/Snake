@@ -9,7 +9,7 @@ let gameOverAudio;
 
 let snakeX = 0;
 let snakeY = 0;
-let tail = [];
+let tail = [] ;
 
 let foodX = 0;
 let foodY = 0;
