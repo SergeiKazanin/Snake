@@ -42,7 +42,7 @@ window.onload = () => {
 }
 
 function update() {
-    //createRect(0, 0, board.width, board.height); //clear screen
+    
     createRect(0, 0, board.width, board.height, 'rgba(6, 50, 9)');
 
     if (gameOver) {
