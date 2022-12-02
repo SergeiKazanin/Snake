@@ -43,7 +43,7 @@ window.onload = () => {
 
 function update() {
     
-    createRect(0, 0, board.width, board.height, 'rgba(6, 50, 9)');
+    createRect(0, 0, board.width, board.height, 'rgb(116, 116, 116)');
 
     if (gameOver) {
         //game and text
@@ -139,7 +139,7 @@ function createRect(x, y, width, height, color = "black") {
 }
 
 function createText(text, x, y, textAlign = 'start', fontSize = 20) {
-    context.fillStyle = "rgb(89, 161, 89)";
+    context.fillStyle = "rgb(0, 0, 0)";
     context.font = `${fontSize}px Roboto Mono`;
     context.textAlign = textAlign;
     context.fillText(text, x, y);
