@@ -42,7 +42,8 @@ window.onload = () => {
 }
 
 function update() {
-    createRect(0, 0, board.width, board.height); //clear screen
+    
+    createRect(0, 0, board.width, board.height, 'rgba(6, 50, 9)');
 
     if (gameOver) {
         //game and text
@@ -57,7 +58,7 @@ function update() {
     //update score
     createText(`Score ${score}`, 30, 40);
     //create first food
-    createRect(foodX, foodY, blockSize, blockSize, "lime");
+    createRect(foodX, foodY, blockSize, blockSize, "rgb(187, 110, 29)");
     //eat
     if (snakeX == foodX && snakeY == foodY) {
         tail.push([foodX, foodY]);
@@ -77,7 +78,7 @@ function update() {
     snakeY += velocityY * blockSize;
     createRect(snakeX, snakeY, blockSize, blockSize, 'orange');
     for (let i = 0; i < tail.length; i++) {
-        createRect(tail[i][0], tail[i][1], blockSize, blockSize, 'lime');
+        createRect(tail[i][0], tail[i][1], blockSize, blockSize, 'rgb(89, 161, 89)');
     }
 
     //wall
@@ -138,7 +139,7 @@ function createRect(x, y, width, height, color = "black") {
 }
 
 function createText(text, x, y, textAlign = 'start', fontSize = 20) {
-    context.fillStyle = "lime";
+    context.fillStyle = "rgb(89, 161, 89)";
     context.font = `${fontSize}px Roboto Mono`;
     context.textAlign = textAlign;
     context.fillText(text, x, y);
