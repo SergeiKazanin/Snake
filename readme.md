@@ -1,3 +1,3 @@
 The snake game on javaScript
 
-https://sergeikazanin.github.io/Snake/
+Проект доступен по ссылке: https://sergeikazanin.github.io/Snake/
